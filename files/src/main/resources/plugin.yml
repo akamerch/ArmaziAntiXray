@@ -1,0 +1,36 @@
+name: ArmaziAntiXray
+version: 1.0.0-BETA
+main: dev.armazi.antixray.ArmaziAntiXray
+description: Enterprise-Grade Anti-Xray Protection System
+authors:
+  - Armazi
+url: https://github.com/akamerch/ArmaziAntiXray
+api-version: 1.21
+
+permissions:
+  armaziantixray.admin:
+    description: Admin access to all commands
+    default: op
+  armaziantixray.reload:
+    description: Reload configuration
+    default: op
+  armaziantixray.alerts:
+    description: Receive xray alerts
+    default: op
+  armaziantixray.inspect:
+    description: Inspect player profiles
+    default: op
+  armaziantixray.bypass:
+    description: Bypass all anti-xray protections
+    default: false
+  armaziantixray.debug:
+    description: Access debug commands
+    default: op
+
+commands:
+  aax:
+    description: ArmaziAntiXray main command
+    usage: /aax <subcommand>
+    aliases:
+      - azantixray
+      - armaziantixray
